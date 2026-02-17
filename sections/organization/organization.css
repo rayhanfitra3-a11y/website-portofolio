@@ -1,0 +1,52 @@
+/* ===========================================
+   ORGANIZATION SECTION — Org Grid, Cards
+   =========================================== */
+
+.org-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.org-card {
+    background-color: #1a1a1a;
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid #2a2a2a;
+    transition: all 0.3s ease;
+}
+
+.org-card:hover {
+    border-color: #ffffff;
+    transform: translateY(-5px);
+}
+
+.org-card h3 {
+    font-size: 24px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.org-role {
+    color: #8b8b8b;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.org-date {
+    color: #6b6b6b;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.org-card p:last-child {
+    color: #b0b0b0;
+    line-height: 1.6;
+}
+
+/* ============ RESPONSIVE ============ */
+@media (max-width: 768px) {
+    .org-grid {
+        grid-template-columns: 1fr;
+    }
+}

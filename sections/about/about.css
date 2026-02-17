@@ -1,0 +1,118 @@
+/* ===========================================
+   ABOUT SECTION — Bio, Tech Stack, Skills
+   =========================================== */
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: start;
+}
+
+.about-text p {
+    font-size: 18px;
+    color: #b0b0b0;
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+.download-cv {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.download-cv svg {
+    transition: transform 0.3s ease;
+}
+
+.download-cv:hover svg {
+    transform: translateY(3px);
+}
+
+.skills h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+/* Tech Stack Grid */
+.tech-stack {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.tech-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 15px;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    border: 1px solid #2a2a2a;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.tech-item:hover {
+    background-color: #2a2a2a;
+    transform: translateY(-5px);
+    border-color: #ffffff;
+}
+
+.tech-item svg {
+    width: 50px;
+    height: 50px;
+}
+
+.tech-item span {
+    font-size: 14px;
+    color: #e0e0e0;
+    font-weight: 500;
+}
+
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.skill-tag {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 14px;
+    border: 1px solid #2a2a2a;
+    transition: all 0.3s ease;
+}
+
+.skill-tag:hover {
+    background-color: #2a2a2a;
+    transform: translateY(-2px);
+}
+
+/* ============ RESPONSIVE ============ */
+@media (max-width: 768px) {
+    .about-content {
+        grid-template-columns: 1fr;
+    }
+
+    .tech-stack {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .tech-stack {
+        grid-template-columns: 1fr;
+    }
+
+    .tech-item svg {
+        width: 40px;
+        height: 40px;
+    }
+}

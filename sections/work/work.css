@@ -1,0 +1,213 @@
+/* ===========================================
+   INTERNSHIP EXPERIENCE — Vertical Timeline
+   =========================================== */
+
+/* Section */
+.work-section {
+    padding: 100px 0;
+    background-color: #000000;
+}
+
+/* Section Header with Icon */
+.work-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    margin-bottom: 60px;
+}
+
+.work-header .section-title {
+    margin-bottom: 0;
+}
+
+.work-icon {
+    color: #8b8bff;
+    flex-shrink: 0;
+}
+
+/* ---- Vertical Timeline ---- */
+.v-timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-left: 40px;
+}
+
+/* The vertical line */
+.v-timeline::before {
+    content: '';
+    position: absolute;
+    left: 16px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(180deg, #8b8bff 0%, #2a2a2a 100%);
+}
+
+/* Timeline Item */
+.v-timeline-item {
+    position: relative;
+    padding-bottom: 48px;
+}
+
+.v-timeline-item:last-child {
+    padding-bottom: 0;
+}
+
+/* White Dot */
+.v-timeline-dot {
+    position: absolute;
+    left: -32px;
+    top: 4px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: 3px solid #000000;
+    box-shadow: 0 0 0 3px rgba(139, 139, 255, 0.3);
+    z-index: 1;
+}
+
+/* Content Block */
+.v-timeline-content {
+    background-color: #0a0a0a;
+    border: 1px solid #1a1a1a;
+    border-radius: 12px;
+    padding: 28px;
+    transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+.v-timeline-content:hover {
+    border-color: #2a2a2a;
+    transform: translateX(4px);
+}
+
+/* Head: Title + Badge */
+.v-timeline-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 6px;
+}
+
+.v-timeline-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.v-timeline-badge {
+    display: inline-block;
+    padding: 4px 14px;
+    font-size: 11px;
+    font-weight: 600;
+    color: #8b8bff;
+    background-color: rgba(139, 139, 255, 0.1);
+    border: 1px solid rgba(139, 139, 255, 0.2);
+    border-radius: 20px;
+    white-space: nowrap;
+    letter-spacing: 0.5px;
+    flex-shrink: 0;
+}
+
+/* Company Name */
+.v-timeline-company {
+    font-size: 14px;
+    color: #A1A1AA;
+    margin-bottom: 16px;
+}
+
+/* Bullet Points */
+.v-timeline-points {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.v-timeline-points li {
+    position: relative;
+    padding-left: 18px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #A1A1AA;
+    line-height: 1.7;
+}
+
+.v-timeline-points li:last-child {
+    margin-bottom: 0;
+}
+
+.v-timeline-points li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 9px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #8b8bff;
+}
+
+/* ============ RESPONSIVE ============ */
+@media (max-width: 768px) {
+    .work-section {
+        padding: 60px 0;
+    }
+
+    .work-header {
+        margin-bottom: 40px;
+    }
+
+    .v-timeline {
+        padding-left: 30px;
+    }
+
+    .v-timeline::before {
+        left: 10px;
+    }
+
+    .v-timeline-dot {
+        left: -27px;
+        width: 12px;
+        height: 12px;
+    }
+
+    .v-timeline-content {
+        padding: 20px;
+    }
+
+    .v-timeline-head {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .v-timeline-badge {
+        align-self: flex-start;
+    }
+
+    .v-timeline-title {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .v-timeline {
+        padding-left: 24px;
+    }
+
+    .v-timeline::before {
+        left: 6px;
+    }
+
+    .v-timeline-dot {
+        left: -24px;
+        width: 10px;
+        height: 10px;
+    }
+
+    .v-timeline-content {
+        padding: 16px;
+    }
+}

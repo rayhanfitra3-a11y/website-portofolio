@@ -1,0 +1,381 @@
+/* ===========================================
+   HERO SECTION — Intro, Photo, Rotating Text
+   =========================================== */
+
+/* Intro Section */
+.intro-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-top: 80px;
+}
+
+/* Intro: dua kolom — teks kiri, foto kanan */
+.intro-section .intro-container {
+    margin-left: 0;
+    margin-right: auto;
+    padding-left: 40px;
+    padding-right: 40px;
+    max-width: 1200px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.intro-content {
+    margin-right: 24px;
+}
+
+/* Badge: JetBrains Mono (kesan tech/coding) */
+.badge {
+    font-family: 'JetBrains Mono', 'Roboto Mono', Consolas, monospace;
+    display: inline-block;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 9px 18px;
+    border-radius: 30px;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 1.8px;
+    margin-bottom: 24px;
+    border: 1px solid #2a2a2a;
+}
+
+/* Heading: Montserrat */
+.intro-title {
+    font-family: 'Montserrat', 'Inter', sans-serif;
+    font-size: 58px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 24px;
+    color: #ffffff;
+}
+
+.highlight {
+    color: #8b8b8b;
+}
+
+/* ---- Rotating Text (teks profesi berganti otomatis) ---- */
+.rotating-text-wrapper {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 2px;
+}
+
+.rotating-text {
+    color: #6d7172;
+    /* aksen cyan neon */
+    font-weight: 700;
+    min-width: 2ch;
+}
+
+.rotating-cursor {
+    color: #6d7172;
+    font-weight: 300;
+    animation: blink-cursor 0.75s step-end infinite;
+}
+
+@keyframes blink-cursor {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+/* Intro Text */
+.intro-text {
+    font-size: 16px;
+    color: #b0b0b0;
+    margin-bottom: 32px;
+    line-height: 1.8;
+}
+
+.intro-buttons {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 48px;
+}
+
+.social-links {
+    display: flex;
+    gap: 25px;
+}
+
+.social-links a {
+    color: #b0b0b0;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #ffffff;
+    transform: translateY(-3px);
+}
+
+/* ============ FLOATING PHOTO CARD ============ */
+
+/* Wrapper — positioning context for card + emojis */
+.intro-photo-wrap {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 16px;
+    padding: 30px;
+}
+
+/* ---- The Card ---- */
+.photo-card {
+    position: relative;
+    width: 360px;
+    height: 450px;
+    background: linear-gradient(145deg, #1a1a1a, #111111);
+    border: 1px solid #2a2a2a;
+    border-radius: 24px;
+    box-shadow:
+        0 25px 60px rgba(0, 0, 0, 0.8),
+        0 0 0 1px rgba(255, 255, 255, 0.05),
+        inset 0 1px 0 rgba(255, 255, 255, 0.08);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    animation: floatCard 5s ease-in-out infinite;
+    z-index: 1;
+}
+
+/* Glow layer — pseudo element at top edge */
+.photo-card::before {
+    content: '';
+    position: absolute;
+    inset: -2px;
+    border-radius: 26px;
+    background: linear-gradient(180deg,
+            rgba(255, 255, 255, 0.08) 0%,
+            transparent 40%,
+            transparent 100%);
+    z-index: -1;
+    pointer-events: none;
+}
+
+/* ---- Photo Frame ---- */
+.photo-frame {
+    position: relative;
+    width: 270px;
+    height: 330px;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: linear-gradient(165deg, #1c1c1e 0%, #121214 50%, #0d0d0f 100%);
+    flex-shrink: 0;
+}
+
+.photo-frame .intro-photo-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 20%;
+    display: none;
+    transition: transform 0.5s ease;
+}
+
+.photo-frame .intro-photo-img.loaded {
+    display: block;
+}
+
+.photo-frame:hover .intro-photo-img.loaded {
+    transform: scale(1.05);
+}
+
+/* Placeholder (shown when no photo) */
+.intro-photo-placeholder {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    color: #4a4a4a;
+    font-size: 14px;
+    background: linear-gradient(165deg, #1c1c1e 0%, #121214 50%, #0d0d0f 100%);
+}
+
+.intro-photo-placeholder.hidden {
+    display: none;
+}
+
+.intro-photo-placeholder .placeholder-icon {
+    font-size: 64px;
+    opacity: 0.5;
+}
+
+/* ---- Available Badge ---- */
+.available-badge {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 18px;
+    background-color: rgba(74, 222, 128, 0.1);
+    border: 1px solid rgba(74, 222, 128, 0.25);
+    border-radius: 20px;
+    color: #4ade80;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.pulse-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #4ade80;
+    animation: pulse-dot 2s ease-in-out infinite;
+    flex-shrink: 0;
+}
+
+/* ---- Floating Emoji Decorations ---- */
+.float-emoji {
+    position: absolute;
+    font-size: 32px;
+    z-index: 2;
+    animation: floatOrbit 4s ease-in-out infinite;
+    pointer-events: none;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.5));
+}
+
+.float-emoji-1 {
+    /* 💻 kiri atas */
+    top: 10%;
+    left: 0;
+    animation-delay: 0s;
+}
+
+.float-emoji-2 {
+    /* ⚡ kanan atas */
+    top: 5%;
+    right: 0;
+    animation-delay: 0.8s;
+}
+
+.float-emoji-3 {
+    /* 🚀 kiri bawah */
+    bottom: 15%;
+    left: 5%;
+    animation-delay: 1.5s;
+}
+
+/* ============ ANIMATIONS ============ */
+
+/* Card naik turun sambil sedikit miring */
+@keyframes floatCard {
+
+    0%,
+    100% {
+        transform: translateY(0px) rotate(-1deg);
+    }
+
+    50% {
+        transform: translateY(-18px) rotate(1deg);
+    }
+}
+
+/* Emoji dekorasi naik turun */
+@keyframes floatOrbit {
+
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-12px);
+    }
+}
+
+/* Dot hijau berkedip dengan glow */
+@keyframes pulse-dot {
+
+    0%,
+    100% {
+        box-shadow: 0 0 0 0 rgba(74, 222, 128, 0.7);
+    }
+
+    50% {
+        box-shadow: 0 0 0 10px rgba(74, 222, 128, 0);
+    }
+}
+
+/* ============ RESPONSIVE ============ */
+@media (max-width: 768px) {
+    .intro-title {
+        font-size: 42px;
+    }
+
+    .intro-buttons {
+        flex-direction: column;
+    }
+
+    .intro-section .intro-container {
+        grid-template-columns: 1fr;
+        padding-left: 20px;
+        padding-right: 20px;
+        gap: 48px;
+    }
+
+    .intro-content {
+        margin-right: 0;
+    }
+
+    .intro-photo-wrap {
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    .photo-card {
+        width: 260px;
+        height: 340px;
+    }
+
+    .photo-frame {
+        width: 190px;
+        height: 240px;
+    }
+
+    .float-emoji {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .intro-title {
+        font-size: 32px;
+    }
+
+    .intro-text {
+        font-size: 15px;
+    }
+
+    .photo-card {
+        width: 240px;
+        height: 310px;
+    }
+
+    .photo-frame {
+        width: 170px;
+        height: 220px;
+    }
+
+    .available-badge {
+        font-size: 10px;
+        padding: 6px 14px;
+    }
+}

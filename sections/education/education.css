@@ -1,0 +1,236 @@
+/* ===========================================
+   EDUCATION & EXPERIENCE SECTION
+   =========================================== */
+
+/* Section */
+.edu-section {
+    padding: 100px 0;
+    background-color: #000000;
+}
+
+/* ---- Two-Column Grid ---- */
+.edu-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: start;
+}
+
+/* Column Header (icon + title) */
+.edu-col-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 36px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #222;
+}
+
+.edu-icon {
+    color: #8b8bff;
+    flex-shrink: 0;
+}
+
+.edu-col-title {
+    font-family: 'Syne', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+}
+
+/* ---- Left Column: Education Entry ---- */
+.edu-entry {
+    margin-bottom: 36px;
+    padding-left: 20px;
+    border-left: 2px solid #222;
+    transition: border-color 0.3s ease;
+}
+
+.edu-entry:hover {
+    border-left-color: #8b8bff;
+}
+
+.edu-entry:last-child {
+    margin-bottom: 0;
+}
+
+.edu-school {
+    font-size: 20px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 4px;
+}
+
+.edu-major {
+    font-size: 14px;
+    color: #A1A1AA;
+    margin-bottom: 12px;
+    font-style: italic;
+}
+
+.edu-meta {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 14px;
+    flex-wrap: wrap;
+}
+
+.edu-badge {
+    display: inline-block;
+    padding: 4px 14px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #8b8bff;
+    background-color: rgba(139, 139, 255, 0.1);
+    border: 1px solid rgba(139, 139, 255, 0.2);
+    border-radius: 20px;
+    letter-spacing: 0.5px;
+}
+
+/* Bullet Points (shared) */
+.edu-points {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.edu-points li {
+    position: relative;
+    padding-left: 18px;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #A1A1AA;
+    line-height: 1.7;
+}
+
+.edu-points li:last-child {
+    margin-bottom: 0;
+}
+
+.edu-points li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 9px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #8b8bff;
+}
+
+/* ---- Right Column: Experience Cards ---- */
+.exp-card {
+    background-color: #141414;
+    border: 1px solid #222;
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.exp-card:hover {
+    border-color: #333;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+}
+
+.exp-card:last-child {
+    margin-bottom: 0;
+}
+
+.exp-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 16px;
+    gap: 12px;
+}
+
+.exp-position {
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 4px;
+}
+
+.exp-company {
+    font-size: 14px;
+    color: #A1A1AA;
+}
+
+.exp-badge {
+    display: inline-block;
+    padding: 4px 14px;
+    font-size: 11px;
+    font-weight: 600;
+    color: #8b8bff;
+    background-color: rgba(139, 139, 255, 0.1);
+    border: 1px solid rgba(139, 139, 255, 0.2);
+    border-radius: 20px;
+    white-space: nowrap;
+    letter-spacing: 0.5px;
+    flex-shrink: 0;
+}
+
+/* ---- Decorative Glow ---- */
+.edu-section .section-title {
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 60px;
+}
+
+/* ============ RESPONSIVE ============ */
+@media (max-width: 768px) {
+    .edu-grid {
+        grid-template-columns: 1fr;
+        gap: 48px;
+    }
+
+    .edu-section {
+        padding: 60px 0;
+    }
+
+    .edu-section .section-title {
+        font-size: 32px;
+        margin-bottom: 40px;
+    }
+
+    .edu-col-title {
+        font-size: 20px;
+    }
+
+    .exp-card-header {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .exp-badge {
+        align-self: flex-start;
+    }
+}
+
+@media (max-width: 480px) {
+    .edu-grid {
+        gap: 36px;
+    }
+
+    .edu-entry {
+        padding-left: 14px;
+    }
+
+    .exp-card {
+        padding: 18px;
+    }
+
+    .edu-school {
+        font-size: 18px;
+    }
+
+    .exp-position {
+        font-size: 16px;
+    }
+}

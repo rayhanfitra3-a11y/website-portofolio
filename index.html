@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rayhan fitra nugraha - Portfolio</title>
+    <link rel="icon" type="image/png" href="images/R_logo-removebg-preview.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Montserrat:wght@500;600;700&family=Syne:wght@500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS: per-section -->
+    <link rel="stylesheet" href="sections/shared/base.css">
+    <link rel="stylesheet" href="sections/hero/hero.css">
+    <link rel="stylesheet" href="sections/about/about.css">
+    <link rel="stylesheet" href="sections/work/work.css">
+    <link rel="stylesheet" href="sections/projects/projects.css">
+    <link rel="stylesheet" href="sections/education/education.css">
+    <link rel="stylesheet" href="sections/organization/organization.css">
+    <link rel="stylesheet" href="sections/awards/awards.css">
+    <link rel="stylesheet" href="sections/contact/contact.css">
+</head>
+
+<body>
+    <!-- Loading Animation -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loader">
+            <div class="loader-inner">
+                <div class="loader-line-wrap">
+                    <div class="loader-line"></div>
+                </div>
+                <div class="loader-line-wrap">
+                    <div class="loader-line"></div>
+                </div>
+                <div class="loader-line-wrap">
+                    <div class="loader-line"></div>
+                </div>
+                <div class="loader-line-wrap">
+                    <div class="loader-line"></div>
+                </div>
+                <div class="loader-line-wrap">
+                    <div class="loader-line"></div>
+                </div>
+            </div>
+            <p class="loading-text">Loading...</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">&lt;rayhan /&gt;</div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#intro" class="nav-link">Intro</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#work" class="nav-link">Work</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#awards" class="nav-link">Awards</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ============================================================ -->
+    <!--                     HERO / INTRO SECTION                     -->
+    <!-- ============================================================ -->
+    <section id="intro" class="intro-section">
+        <div class="container intro-container">
+            <div class="intro-content">
+                <div class="badge">AVAILABLE FOR OPPORTUNITIES</div>
+                <h1 class="intro-title">
+                    Hello, I am Rayhan<br>
+                    <span class="rotating-text-wrapper">
+                        <span class="rotating-text" id="rotatingText">IoT Developer.</span>
+                        <span class="rotating-cursor">|</span>
+                    </span>
+                </h1>
+                <p class="intro-text">
+                    Welcome to my portfolio. Feel free to explore my work<br>
+                    and reach out if you'd like to discuss anything.
+                </p>
+                <div class="intro-buttons">
+                    <a href="#projects" class="btn btn-primary">View Projects →</a>
+                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/rayhanfitra3-a11y" target="_blank" aria-label="GitHub">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/rayhan-fitra-08b0b739b/" target="_blank" aria-label="LinkedIn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/rayhanfitranugraha/" target="_blank" aria-label="Instagram">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="intro-photo-wrap">
+                <!-- Floating Emoji Decorations -->
+                <span class="float-emoji float-emoji-1">💻</span>
+                <span class="float-emoji float-emoji-2">⚡</span>
+                <span class="float-emoji float-emoji-3">🚀</span>
+
+                <!-- Photo Card -->
+                <div class="photo-card">
+                    <div class="photo-frame">
+                        <img id="introProfilePhoto" class="intro-photo-img" src="" alt="Rayhan">
+                        <div id="introPhotoPlaceholder" class="intro-photo-placeholder">
+                            <span class="placeholder-icon">👤</span>
+                            <span>Foto kamu</span>
+                        </div>
+                    </div>
+                    <div class="available-badge">
+                        <span class="pulse-dot"></span>
+                        Available
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!--                       ABOUT SECTION                          -->
+    <!-- ============================================================ -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Halo! Saya seorang pelajar yang berfokus pada Web Development dan Sistem IoT.
+                        Saya memiliki passion besar dalam menghubungkan perangkat keras dengan aplikasi web
+                        modern untuk menciptakan solusi digital yang cerdas.</p>
+                    <p>Di waktu luang, saya suka mengerjakan project pribadi dan berkontribusi dalam berbagai kegiatan
+                        sekolah. Saya percaya bahwa pembelajaran adalah proses yang tidak pernah berhenti.</p>
+                    <a href="images/Modern Professional CV Resume.pdf" class="btn btn-primary download-cv"
+                        download="Rayhan-Resume.pdf">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7 10 12 15 17 10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                        </svg>
+                        Download Resume
+                    </a>
+                </div>
+                <div class="skills">
+                    <h3>Tech Stack</h3>
+                    <div class="tech-stack">
+                        <div class="tech-item" title="HTML5">
+                            <svg viewBox="0 0 128 128">
+                                <path fill="#E44D26"
+                                    d="M19.037 113.876L9.032 1.661h109.936l-10.016 112.198-45.019 12.48z"></path>
+                                <path fill="#F16529" d="M64 116.8l36.378-10.086 8.559-95.878H64z"></path>
+                                <path fill="#EBEBEB"
+                                    d="M64 52.455H45.788L44.53 38.361H64V24.599H29.489l.33 3.692 3.382 37.927H64zm0 35.743l-.061.017-15.327-4.14-.979-10.975H33.816l1.928 21.609 28.193 7.826.063-.017z">
+                                </path>
+                                <path fill="#fff"
+                                    d="M63.952 52.455v13.763h16.947l-1.597 17.849-15.35 4.143v14.319l28.215-7.82.207-2.325 3.234-36.233.335-3.696h-3.708zm0-27.856v13.762h33.244l.276-3.092.628-6.978.329-3.692z">
+                                </path>
+                            </svg>
+                            <span>HTML</span>
+                        </div>
+                        <div class="tech-item" title="CSS3">
+                            <svg viewBox="0 0 128 128">
+                                <path fill="#1572B6"
+                                    d="M18.814 114.123L8.76 1.352h110.48l-10.064 112.754-45.243 12.543-45.119-12.526z">
+                                </path>
+                                <path fill="#33A9DC" d="M64.001 117.062l36.559-10.136 8.601-96.354h-45.16v106.49z">
+                                </path>
+                                <path fill="#fff"
+                                    d="M64.001 51.429h18.302l1.264-14.163H64.001V23.435h34.682l-.332 3.711-3.4 38.114h-30.95V51.429z">
+                                </path>
+                                <path fill="#EBEBEB"
+                                    d="M64.083 87.349l-.061.018-15.403-4.159-.985-11.031H33.752l1.937 21.717 28.331 7.863.063-.018v-14.39z">
+                                </path>
+                                <path fill="#fff"
+                                    d="M81.127 64.675l-1.666 18.522-15.426 4.164v14.39l28.354-7.858.208-2.337 2.406-26.881H81.127z">
+                                </path>
+                                <path fill="#EBEBEB"
+                                    d="M64.048 23.435v13.831H30.64l-.277-3.108-.63-7.012-.331-3.711h34.646zm-.047 27.996v13.831H48.792l-.277-3.108-.631-7.012-.33-3.711h16.447z">
+                                </path>
+                            </svg>
+                            <span>CSS</span>
+                        </div>
+                        <div class="tech-item" title="JavaScript">
+                            <svg viewBox="0 0 128 128">
+                                <path fill="#F0DB4F" d="M1.408 1.408h125.184v125.185H1.408z"></path>
+                                <path fill="#323330"
+                                    d="M116.347 96.736c-.917-5.711-4.641-10.508-15.672-14.981-3.832-1.761-8.104-3.022-9.377-5.926-.452-1.69-.512-2.642-.226-3.665.821-3.32 4.784-4.355 7.925-3.403 2.023.678 3.938 2.237 5.093 4.724 5.402-3.498 5.391-3.475 9.163-5.879-1.381-2.141-2.118-3.129-3.022-4.045-3.249-3.629-7.676-5.498-14.756-5.355l-3.688.477c-3.534.893-6.902 2.748-8.877 5.235-5.926 6.724-4.236 18.492 2.975 23.335 7.104 5.332 17.54 6.545 18.873 11.531 1.297 6.104-4.486 8.08-10.234 7.378-4.236-.881-6.592-3.034-9.139-6.949-4.688 2.713-4.688 2.713-9.508 5.485 1.143 2.499 2.344 3.63 4.26 5.795 9.068 9.198 31.76 8.746 35.83-5.176.165-.478 1.261-3.666.38-8.581zM69.462 58.943H57.753l-.048 30.272c0 6.438.333 12.34-.714 14.149-1.713 3.558-6.152 3.117-8.175 2.427-2.059-1.012-3.106-2.451-4.319-4.485-.333-.584-.583-1.036-.667-1.071l-9.52 5.83c1.583 3.249 3.915 6.069 6.902 7.901 4.462 2.678 10.459 3.499 16.731 2.059 4.082-1.189 7.604-3.652 9.448-7.401 2.666-4.915 2.094-10.864 2.07-17.444.06-10.735.001-21.468.001-32.237z">
+                                </path>
+                            </svg>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="tech-item" title="Python">
+                            <svg viewBox="0 0 128 128">
+                                <linearGradient id="python-a" gradientUnits="userSpaceOnUse" x1="70.252" y1="1237.476"
+                                    x2="170.659" y2="1151.089"
+                                    gradientTransform="matrix(.563 0 0 -.568 -29.215 707.817)">
+                                    <stop offset="0" stop-color="#5A9FD4"></stop>
+                                    <stop offset="1" stop-color="#306998"></stop>
+                                </linearGradient>
+                                <path fill="url(#python-a)"
+                                    d="M63.391 1.988c-4.222.02-8.252.379-11.8 1.007-10.45 1.846-12.346 5.71-12.346 12.837v9.411h24.693v3.137H29.977c-7.176 0-13.46 4.313-15.426 12.521-2.268 9.405-2.368 15.275 0 25.096 1.755 7.311 5.947 12.519 13.124 12.519h8.491V67.234c0-8.151 7.051-15.34 15.426-15.34h24.665c6.866 0 12.346-5.654 12.346-12.548V15.833c0-6.693-5.646-11.72-12.346-12.837-4.244-.706-8.645-1.027-12.866-1.008zM50.037 9.557c2.55 0 4.634 2.117 4.634 4.721 0 2.593-2.083 4.69-4.634 4.69-2.56 0-4.633-2.097-4.633-4.69-.001-2.604 2.073-4.721 4.633-4.721z">
+                                </path>
+                                <linearGradient id="python-b" gradientUnits="userSpaceOnUse" x1="209.474" y1="1098.811"
+                                    x2="173.62" y2="1149.537"
+                                    gradientTransform="matrix(.563 0 0 -.568 -29.215 707.817)">
+                                    <stop offset="0" stop-color="#FFD43B"></stop>
+                                    <stop offset="1" stop-color="#FFE873"></stop>
+                                </linearGradient>
+                                <path fill="url(#python-b)"
+                                    d="M91.682 28.38v10.966c0 8.5-7.208 15.655-15.426 15.655H51.591c-6.756 0-12.346 5.783-12.346 12.549v23.515c0 6.691 5.818 10.628 12.346 12.547 7.816 2.297 15.312 2.713 24.665 0 6.216-1.801 12.346-5.423 12.346-12.547v-9.412H63.938v-3.138h37.012c7.176 0 9.852-5.005 12.348-12.519 2.578-7.735 2.467-15.174 0-25.096-1.774-7.145-5.161-12.521-12.348-12.521h-9.268zM77.809 87.927c2.561 0 4.634 2.097 4.634 4.692 0 2.602-2.074 4.719-4.634 4.719-2.55 0-4.633-2.117-4.633-4.719 0-2.595 2.083-4.692 4.633-4.692z">
+                                </path>
+                            </svg>
+                            <span>Python</span>
+                        </div>
+                        <div class="tech-item" title="React">
+                            <svg viewBox="0 0 128 128">
+                                <g fill="#61DAFB">
+                                    <circle cx="64" cy="64" r="11.4"></circle>
+                                    <path
+                                        d="M107.3 45.2c-2.2-.8-4.5-1.6-6.9-2.3.6-2.4 1.1-4.8 1.5-7.1 2.1-13.2-.2-22.5-6.6-26.1-1.9-1.1-4-1.6-6.4-1.6-7 0-15.9 5.2-24.9 13.9-9-8.7-17.9-13.9-24.9-13.9-2.4 0-4.5.5-6.4 1.6-6.4 3.7-8.7 13-6.6 26.1.4 2.3.9 4.7 1.5 7.1-2.4.7-4.7 1.4-6.9 2.3C8.2 50 1.4 56.6 1.4 64s6.9 14 19.3 18.8c2.2.8 4.5 1.6 6.9 2.3-.6 2.4-1.1 4.8-1.5 7.1-2.1 13.2.2 22.5 6.6 26.1 1.9 1.1 4 1.6 6.4 1.6 7.1 0 16-5.2 24.9-13.9 9 8.7 17.9 13.9 24.9 13.9 2.4 0 4.5-.5 6.4-1.6 6.4-3.7 8.7-13 6.6-26.1-.4-2.3-.9-4.7-1.5-7.1 2.4-.7 4.7-1.4 6.9-2.3 12.5-4.8 19.3-11.4 19.3-18.8s-6.8-14-19.3-18.8zM92.5 14.7c4.1 2.4 5.5 9.8 3.8 20.3-.3 2.1-.8 4.3-1.4 6.6-5.2-1.2-10.7-2-16.5-2.5-3.4-4.8-6.9-9.1-10.4-13 7.4-7.3 14.9-12.3 21-12.3 1.3 0 2.5.3 3.5.9zM81.3 74c-1.8 3.2-3.9 6.4-6.1 9.6-3.7.3-7.4.4-11.2.4-3.9 0-7.6-.1-11.2-.4-2.2-3.2-4.2-6.4-6-9.6-1.9-3.3-3.7-6.7-5.3-10 1.6-3.3 3.4-6.7 5.3-10 1.8-3.2 3.9-6.4 6.1-9.6 3.7-.3 7.4-.4 11.2-.4 3.9 0 7.6.1 11.2.4 2.2 3.2 4.2 6.4 6 9.6 1.9 3.3 3.7 6.7 5.3 10-1.7 3.3-3.4 6.6-5.3 10zm8.3-3.3c1.5 3.5 2.7 6.9 3.8 10.3-3.4.8-7 1.4-10.8 1.9 1.2-1.9 2.5-3.9 3.6-6 1.2-2.1 2.3-4.2 3.4-6.2zM64 97.8c-2.4-2.6-4.7-5.4-6.9-8.3 2.3.1 4.6.2 6.9.2 2.3 0 4.6-.1 6.9-.2-2.2 2.9-4.5 5.7-6.9 8.3zm-18.6-15c-3.8-.5-7.4-1.1-10.8-1.9 1.1-3.3 2.3-6.8 3.8-10.3 1.1 2 2.2 4.1 3.4 6.1 1.2 2.2 2.4 4.1 3.6 6.1zm-7-25.5c-1.5-3.5-2.7-6.9-3.8-10.3 3.4-.8 7-1.4 10.8-1.9-1.2 1.9-2.5 3.9-3.6 6-1.2 2.1-2.3 4.2-3.4 6.2zM64 30.2c2.4 2.6 4.7 5.4 6.9 8.3-2.3-.1-4.6-.2-6.9-.2-2.3 0-4.6.1-6.9.2 2.2-2.9 4.5-5.7 6.9-8.3zm22.2 21l-3.6-6c3.8.5 7.4 1.1 10.8 1.9-1.1 3.3-2.3 6.8-3.8 10.3-1.1-2.1-2.2-4.2-3.4-6.2zM31.7 35c-1.7-10.5-.3-17.9 3.8-20.3 1-.6 2.2-.9 3.5-.9 6 0 13.5 4.9 21 12.3-3.5 3.8-7 8.2-10.4 13-5.8.5-11.3 1.4-16.5 2.5-.6-2.3-1-4.5-1.4-6.6zM7 64c0-4.7 5.7-9.7 15.7-13.4 2-.8 4.2-1.5 6.4-2.1 1.6 5 3.6 10.3 6 15.6-2.4 5.3-4.5 10.5-6 15.5C15.3 75.6 7 69.6 7 64zm28.5 49.3c-4.1-2.4-5.5-9.8-3.8-20.3.3-2.1.8-4.3 1.4-6.6 5.2 1.2 10.7 2 16.5 2.5 3.4 4.8 6.9 9.1 10.4 13-7.4 7.3-14.9 12.3-21 12.3-1.3 0-2.5-.3-3.5-.9zM96.3 93c1.7 10.5.3 17.9-3.8 20.3-1 .6-2.2.9-3.5.9-6 0-13.5-4.9-21-12.3 3.5-3.8 7-8.2 10.4-13 5.8-.5 11.3-1.4 16.5-2.5.6 2.3 1 4.5 1.4 6.6zm9-15.6c-2 .8-4.2 1.5-6.4 2.1-1.6-5-3.6-10.3-6-15.6 2.4-5.3 4.5-10.5 6-15.5 13.8 4 22.1 10 22.1 15.6 0 4.7-5.8 9.7-15.7 13.4z">
+                                    </path>
+                                </g>
+                            </svg>
+                            <span>React</span>
+                        </div>
+                        <div class="tech-item" title="Node.js">
+                            <svg viewBox="0 0 128 128">
+                                <path fill="#83CD29"
+                                    d="M112.771 30.334L68.674 4.729c-2.781-1.584-6.402-1.584-9.205 0L14.901 30.334C12.031 31.985 10 35.088 10 38.407v51.142c0 3.319 2.084 6.423 4.954 8.083l11.775 6.688c5.628 2.772 7.617 2.772 10.178 2.772 8.333 0 13.093-5.039 13.093-13.828V52.667c0-.539-.401-.938-.94-.938h-4.067c-.539 0-.94.398-.94.938v40.598c0 3.176-3.299 6.443-8.74 3.713l-11.947-6.881c-.319-.18-.521-.519-.521-.861V38.407c0-.342.202-.681.521-.861l44.033-25.498c.297-.166.659-.166.956 0l44.033 25.498c.319.18.521.519.521.861v51.142c0 .342-.202.681-.521.861l-44.033 25.498c-.297.166-.659.166-.956 0l-11.214-6.636c-.297-.166-.659-.166-.956 0l-3.75 2.228c-.297.166-.297.519 0 .685l14.964 8.864c1.391.804 2.938 1.196 4.485 1.196 1.547 0 3.094-.392 4.485-1.196l44.033-25.498c2.87-1.66 4.954-4.764 4.954-8.083V38.407c0-3.319-2.084-6.423-4.954-8.083zM77.91 81.445c-11.726 0-14.309-3.235-15.17-9.066-.1-.628-.633-1.379-1.272-1.379h-3.96c-.695 0-1.272.615-1.272 1.379 0 6.253 3.381 13.698 21.674 13.698 12.463 0 19.655-4.923 19.655-13.536 0-8.612-5.827-10.898-18.095-12.495-12.463-1.626-13.807-2.459-13.807-5.35 0-2.379 1.078-5.548 10.396-5.548 8.28 0 11.355 1.791 12.615 7.389.111.635.645 1.125 1.272 1.125h3.96c.346 0 .684-.139.933-.379.249-.24.369-.579.336-.918-.626-7.445-6.029-10.909-19.116-10.909-10.888 0-17.409 4.605-17.409 12.296 0 8.757 6.779 11.195 17.688 12.297 12.009 1.205 14.214 3.003 14.214 5.548.001 4.203-3.503 6.848-14.656 6.848z">
+                                </path>
+                            </svg>
+                            <span>Node.js</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!--                   INTERNSHIP EXPERIENCE                      -->
+    <!-- ============================================================ -->
+    <section id="work" class="work-section">
+        <div class="container">
+            <div class="work-header">
+                <svg class="work-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                </svg>
+                <h2 class="section-title">Internship Experience</h2>
+            </div>
+
+            <div class="v-timeline">
+                <!-- Entry 1 -->
+                <div class="v-timeline-item">
+                    <div class="v-timeline-dot"></div>
+                    <div class="v-timeline-content">
+                        <div class="v-timeline-head">
+                            <h3 class="v-timeline-title">IT Support Technician Intern</h3>
+                            <span class="v-timeline-badge">Jan 2025 — Jun 2025</span>
+                        </div>
+                        <p class="v-timeline-company">PLTU Tanjung Awar-Awar</p>
+                        <ul class="v-timeline-points">
+                            <li>Diagnosed and repaired PC/Laptop hardware issues including motherboard, RAM, and storage
+                                drive replacements</li>
+                            <li>Performed clean OS installations (Windows 10/11) and configured essential drivers and
+                                software packages</li>
+                            <li>Managed LAN/WAN network infrastructure, including router and switch configuration</li>
+                            <li>Provided technical support for electrical and IT-related systems across the facility
+                            </li>
+                            <li>Maintained asset inventory and documentation for all IT equipment</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!--                     PROJECTS SECTION                         -->
+    <!-- ============================================================ -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+
+            <!-- Project Filter -->
+            <div class="project-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="system">System</button>
+                <button class="filter-btn" data-filter="ai">AI</button>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card" data-category="web">
+                    <div class="project-image" data-project="portfolio">
+                        <img class="project-img" src="" alt="Portfolio Website">
+                        <div class="project-placeholder">🌐</div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Portfolio Website</h3>
+                        <p>Website portofolio pribadi yang dibuat dengan HTML, CSS, dan JavaScript.</p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <button class="btn-view-detail" data-project="portfolio">View Details</button>
+                    </div>
+                </div>
+                <div class="project-card" data-category="system">
+                    <div class="project-image" data-project="school">
+                        <img class="project-img" src="" alt="School Management System">
+                        <div class="project-placeholder">📱</div>
+                    </div>
+                    <div class="project-info">
+                        <h3>EcoFarmX</h3>
+                        <p>Sistem pertanian cerdas dengan sistem irigasi otomatis dan pendeteksi hama pada lahan
+                            pertanian.</p>
+                        <div class="project-tags">
+                            <span>PHP</span>
+                            <span>MySQL</span>
+                            <span>Bootstrap</span>
+                        </div>
+                        <button class="btn-view-detail" data-project="school">View Details</button>
+                    </div>
+                </div>
+                <div class="project-card" data-category="ai">
+                    <div class="project-image" data-project="ai-classifier">
+                        <img class="project-img" src="" alt="AI Image Classifier">
+                        <div class="project-placeholder">🤖</div>
+                    </div>
+                    <div class="project-info">
+                        <h3>TechAgro</h3>
+                        <p>Sistem pertanian vertikal cerdas berbasis IoT, AI dengan dukungan Energi Hibrida</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>TensorFlow</span>
+                            <span>Flask</span>
+                        </div>
+                        <button class="btn-view-detail" data-project="ai-classifier">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Modal -->
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img id="modalProjectImg" class="modal-project-img" src="" alt="">
+                    <div id="modalProjectIcon" class="project-placeholder-large">🌐</div>
+                </div>
+                <div class="modal-info">
+                    <h2 id="modalProjectTitle">Project Title</h2>
+                    <p id="modalProjectDescription">Project description goes here.</p>
+
+                    <h3>Tech Stack</h3>
+                    <div id="modalTechStack" class="project-tags"></div>
+
+                    <h3>Key Features</h3>
+                    <ul id="modalFeatures"></ul>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================================ -->
+    <!--                    EDUCATION SECTION                         -->
+    <!-- ============================================================ -->
+    <section id="education" class="edu-section">
+        <div class="container">
+            <h2 class="section-title">Education & Experience</h2>
+
+            <div class="edu-grid">
+                <!-- ====== LEFT COLUMN: Formal Education ====== -->
+                <div class="edu-col">
+                    <div class="edu-col-header">
+                        <svg class="edu-icon" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                            <path d="M6 12v5c0 1.1 2.7 3 6 3s6-1.9 6-3v-5"></path>
+                        </svg>
+                        <h3 class="edu-col-title">Education</h3>
+                    </div>
+
+                    <!-- School 1 -->
+                    <div class="edu-entry">
+                        <h4 class="edu-school">SMK Negeri 1 Tuban</h4>
+                        <p class="edu-major">Computer and Network Engineering</p>
+                        <div class="edu-meta">
+                            <span class="edu-badge">2023 — 2026</span>
+                        </div>
+                        <ul class="edu-points">
+                            <li>Fokus pada infrastruktur jaringan, perbaikan hardware, dan instalasi OS</li>
+                            <li>Mempelajari konfigurasi router, switch, dan firewall</li>
+                            <li>Aktif dalam proyek IoT dan Smart Agriculture</li>
+                            <li>Aktif dalam kegiatan ekstrakurikuler</li>
+                            <li>Aktif dalam perlombaan nasional</li>
+                            <li>Mendapatkan nilai UKK produktif tertinggi se-jurusan</li>
+                        </ul>
+                    </div>
+
+                    <!-- School 2 -->
+                    <div class="edu-entry">
+                        <h4 class="edu-school">SMP Negeri 4 Tuban</h4>
+                        <p class="edu-major">Pendidikan Umum</p>
+                        <div class="edu-meta">
+                            <span class="edu-badge">2019 — 2023</span>
+                        </div>
+                        <ul class="edu-points">
+                            <li>Lulus dengan nilai rata-rata yang baik</li>
+                            <li>Aktif dalam kegiatan ekstrakurikuler</li>
+                            <li>Aktif dalam kegiatan OSIS</li>
+                            <li>Juara 2 lomba angkat berat se-kabupaten Tuban</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- ====== RIGHT COLUMN: Experience & Bootcamp ====== -->
+                <div class="edu-col">
+                    <div class="edu-col-header">
+                        <svg class="edu-icon" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                            <line x1="8" y1="21" x2="16" y2="21"></line>
+                            <line x1="12" y1="17" x2="12" y2="21"></line>
+                        </svg>
+                        <h3 class="edu-col-title">Experience & Bootcamp</h3>
+                    </div>
+
+                    <!-- Experience Card 1 -->
+                    <div class="exp-card">
+                        <div class="exp-card-header">
+                            <div>
+                                <h4 class="exp-position">IT Support Intern</h4>
+                                <p class="exp-company">PLTU Tanjung Awar-Awar</p>
+                            </div>
+                            <span class="exp-badge">2025</span>
+                        </div>
+                        <ul class="edu-points">
+                            <li>IT Infrastructure & Technical Support</li>
+                            <li>Hardware & Software Maintenance</li>
+                            <li>Network Administration</li>
+                        </ul>
+                    </div>
+
+                    <!-- Experience Card 2 -->
+                    <div class="exp-card">
+                        <div class="exp-card-header">
+                            <div>
+                                <h4 class="exp-position">Web Development Bootcamp</h4>
+                                <p class="exp-company">Self-Learning & Online Courses</p>
+                            </div>
+                            <span class="exp-badge">2023 — 2024</span>
+                        </div>
+                        <ul class="edu-points">
+                            <li>Mempelajari HTML, CSS, JavaScript, dan React</li>
+                            <li>Membangun proyek portofolio dan aplikasi web</li>
+                            <li>Fokus pada responsive design dan modern UI/UX</li>
+                        </ul>
+                    </div>
+
+                    <!-- Experience Card 3 -->
+                    <div class="exp-card">
+                        <div class="exp-card-header">
+                            <div>
+                                <h4 class="exp-position">IoT & Smart Agriculture</h4>
+                                <p class="exp-company">Research & Development Project</p>
+                            </div>
+                            <span class="exp-badge">2024 — 2025</span>
+                        </div>
+                        <ul class="edu-points">
+                            <li>Mengembangkan sistem EcoFarmX & TechAgro</li>
+                            <li>Integrasi sensor, microcontroller, dan AI</li>
+                            <li>Presentasi di kompetisi nasional (ITS & UNAIR)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ============================================================ -->
+    <!--                      AWARDS SECTION                          -->
+    <!-- ============================================================ -->
+    <section id="awards" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Awards & Achievements</h2>
+            <div class="awards-grid">
+                <div class="award-card">
+                    <div class="award-icon">🥈</div>
+                    <h3>Juara 2 Lomba LKTI Tingkat Nasional</h3>
+                    <p class="award-date">2026</p>
+                    <p>Departemen Teknik Instrumentasi, Institut Teknologi Sepuluh Nopember (ITS)</p>
+                </div>
+                <div class="award-card">
+                    <div class="award-icon">🥈</div>
+                    <h3>Juara 2 Lomba LKTI Tingkat Nasional</h3>
+                    <p class="award-date">2025</p>
+                    <p>Himpunan Mahasiswa D4 Teknologi Rekayasa Instrumentasi dan Kontrol Departemen Teknik Fakultas
+                        Vokasi Universitas Airlangga.</p>
+                </div>
+                <div class="award-card">
+                    <div class="award-icon">⭐</div>
+                    <h3>Juara Harapan 1 Lomba INSKILL</h3>
+                    <p class="award-date">2025</p>
+                    <p>Departemen Teknik Instrumentasi, Institut Teknologi Sepuluh Nopember (ITS)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!--                     CONTACT SECTION                          -->
+    <!-- ============================================================ -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <p class="contact-text">
+                    Tertarik untuk berkolaborasi atau punya pertanyaan? Jangan ragu untuk menghubungi saya!
+                </p>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                            </path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        <span>rayhanfitra3@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path
+                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                            </path>
+                        </svg>
+                        <span>+62 856-0427-4755</span>
+                    </div>
+                    <div class="contact-item">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                        <span>Tuban, Indonesia</span>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" name="from_name" placeholder="Nama Kamu" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="from_email" placeholder="Email Kamu" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" rows="5" placeholder="Pesan Kamu" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" id="submitBtn">Kirim Pesan</button>
+                </form>
+                <div id="formStatus" class="form-status"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Rayhan. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="https://github.com" target="_blank">GitHub</a>
+                <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+                <a href="https://instagram.com" target="_blank">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS: Project data (harus sebelum projects.js) -->
+    <script src="sections/projects/data/project-portfolio.js"></script>
+    <script src="sections/projects/data/project-school.js"></script>
+    <script src="sections/projects/data/project-ai-classifier.js"></script>
+    <script src="sections/projects/data/projects-data.js"></script>
+
+    <!-- JS: Image config -->
+    <script src="images.js"></script>
+
+    <!-- JS: per-section -->
+    <script src="sections/shared/global.js"></script>
+    <script src="sections/hero/hero.js"></script>
+    <script src="sections/projects/projects.js"></script>
+
+    <!-- EmailJS SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="sections/contact/contact.js"></script>
+</body>
+
+</html>

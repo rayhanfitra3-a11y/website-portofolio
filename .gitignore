@@ -1,0 +1,23 @@
+# ====================================
+# File pribadi — JANGAN upload ke GitHub
+# ====================================
+*.pdf
+
+# ====================================
+# File system (otomatis dibuat OS/IDE)
+# ====================================
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# ====================================
+# IDE / Editor
+# ====================================
+.vscode/
+.idea/
+
+# ====================================
+# Node.js (jaga-jaga kalau pernah npm init)
+# ====================================
+node_modules/
+package-lock.json
