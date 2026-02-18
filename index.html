@@ -150,7 +150,7 @@
                         modern untuk menciptakan solusi digital yang cerdas.</p>
                     <p>Di waktu luang, saya suka mengerjakan project pribadi dan berkontribusi dalam berbagai kegiatan
                         sekolah. Saya percaya bahwa pembelajaran adalah proses yang tidak pernah berhenti.</p>
-                    <a href="images/Rayhan-Resume.pdf" class="btn btn-primary download-cv" download="Rayhan-Resume.pdf">
+                    <a href="images/Rayhan-Resume.pdf" class="btn btn-primary download-cv" id="downloadCvBtn">
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                             stroke-width="2">
                             <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
@@ -159,6 +159,26 @@
                         </svg>
                         Download Resume
                     </a>
+                    <script>
+                        document.getElementById('downloadCvBtn').addEventListener('click', function (e) {
+                            e.preventDefault();
+                            fetch('images/Rayhan-Resume.pdf')
+                                .then(res => res.blob())
+                                .then(blob => {
+                                    const url = window.URL.createObjectURL(blob);
+                                    const a = document.createElement('a');
+                                    a.href = url;
+                                    a.download = 'Rayhan-Resume.pdf';
+                                    document.body.appendChild(a);
+                                    a.click();
+                                    document.body.removeChild(a);
+                                    window.URL.revokeObjectURL(url);
+                                })
+                                .catch(() => {
+                                    window.open('images/Rayhan-Resume.pdf', '_blank');
+                                });
+                        });
+                    </script>
                 </div>
                 <div class="skills">
                     <h3>Tech Stack</h3>
