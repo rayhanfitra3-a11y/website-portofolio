@@ -9,7 +9,7 @@
  */
 const IMAGES = {
     // Foto di bagian intro (samping kanan)
-    profile: 'images/mee.jpeg',
+    profile: 'images/WhatsApp Image 2026-02-18 at 23.39.36.jpeg',
 
     // Gambar untuk setiap project (kartu & modal)
     projects: {
