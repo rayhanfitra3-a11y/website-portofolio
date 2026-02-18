@@ -2,6 +2,7 @@
 # File pribadi — JANGAN upload ke GitHub
 # ====================================
 *.pdf
+!images/Rayhan-Resume.pdf
 
 # ====================================
 # File system (otomatis dibuat OS/IDE)
