@@ -1,21 +1,21 @@
 /**
- * Data project: AI Image Classifier
- * Edit file ini untuk mengubah deskripsi, tech stack, link, dll.
+ * Data project: TechAgro
+ * Edit this file to change description, tech stack, links, etc.
  */
 const PROJECT_AI_CLASSIFIER = {
     id: 'ai-classifier',
     category: 'ai',
     icon: '🤖',
     title: 'TechAgro',
-    description: 'Sistem deteksi dini penyakit pada sayuran dengan menggunakan algoritma YOLOv8n sebagai model object detection, dan Efisinet-B0 sebagai model klasifikasi.',
-    shortDescription: 'Aplikasi AI untuk mengklasifikasikan gambar menggunakan machine learning.',
+    description: 'An early disease detection system for vegetables using YOLOv8n as the object detection model and EfficientNet-B0 as the classification model.',
+    shortDescription: 'An AI application for image classification using machine learning.',
     techStack: ['Python', 'TensorFlow', 'Flask', 'OpenCV'],
     features: [
         'Real-time image classification',
         'Support multiple image formats',
         'Confidence score display',
         'Model training interface',
-        'API endpoint untuk integrasi'
+        'API endpoint for integration'
     ],
     github: 'https://github.com/rayhan/ai-classifier',
     live: 'https://ai-classifier-rayhan.herokuapp.com'

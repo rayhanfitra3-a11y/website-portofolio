@@ -1,21 +1,21 @@
 /**
- * Data project: School Management System
- * Edit file ini untuk mengubah deskripsi, tech stack, link, dll.
+ * Data project: EcoFarmX
+ * Edit this file to change description, tech stack, links, etc.
  */
 const PROJECT_SCHOOL = {
     id: 'school',
     category: 'system',
     icon: '📱',
     title: 'EcoFarmX',
-    description: 'Sistem irigasi otomatis dengan menggunakan sensor soilmoisture, dan sistem pendeteksi hama dengan menggunakan algoritma FOMO (Faster Objects, More Objects)',
-    shortDescription: 'Sistem manajemen sekolah untuk memudahkaSistem Pertanian Cerdas Dengan Sistem Irigasi Otomatis dan Pendeteksi Hama Pada Tanaman Berbasis AI',
+    description: 'An automatic irrigation system using soil moisture sensors, and an AI-based pest detection system powered by the FOMO (Faster Objects, More Objects) algorithm.',
+    shortDescription: 'A Smart Farming System with Automatic Irrigation and AI-Based Pest Detection for Agricultural Fields.',
     techStack: ['C++', 'MySQL', 'Bootstrap', 'jQuery'],
     features: [
-        'Dashboard admin dan user',
-        'Sistem Irigasi Otomatis',
-        'Sistem pendeteksi keberada hama pada pertanian',
-        'Dukungan energi hibrida panel surya, dan kincir angin',
-        'Monitoring hasil pembacaan sensor secara real-time'
+        'Admin and user dashboard',
+        'Automatic irrigation system',
+        'AI-powered pest detection for crops',
+        'Hybrid energy support with solar panels and wind turbines',
+        'Real-time sensor data monitoring'
     ],
     github: 'https://github.com/rayhan/school-system',
     live: '#'

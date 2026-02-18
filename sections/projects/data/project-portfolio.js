@@ -1,21 +1,21 @@
 /**
  * Data project: Portfolio Website
- * Edit file ini untuk mengubah deskripsi, tech stack, link, dll.
+ * Edit this file to change description, tech stack, links, etc.
  */
 const PROJECT_PORTFOLIO = {
     id: 'portfolio',
     category: 'web',
     icon: '🌐',
     title: 'Portfolio Website',
-    description: 'Website portofolio pribadi yang dibangun dengan HTML, CSS, dan JavaScript murni. Menampilkan semua project dan pengalaman saya dengan desain modern dan responsive.',
-    shortDescription: 'Website portofolio pribadi yang dibuat dengan HTML, CSS, dan JavaScript.',
+    description: 'A personal portfolio website built with vanilla HTML, CSS, and JavaScript. Showcasing all my projects and experiences with a modern, responsive design.',
+    shortDescription: 'A personal portfolio website built with HTML, CSS, and JavaScript.',
     techStack: ['HTML', 'CSS', 'JavaScript'],
     features: [
-        'Responsive design untuk semua device',
+        'Responsive design for all devices',
         'Smooth scroll navigation',
         'Project filtering system',
         'Loading animation',
-        'Modal popup untuk detail project'
+        'Modal popup for project details'
     ],
     github: 'https://github.com/rayhan/portfolio',
     live: 'https://rayhan-portfolio.netlify.app'
