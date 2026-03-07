@@ -40,12 +40,14 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 0.35s ease;
+    transition: transform 0.35s ease, filter 0.35s ease;
     display: block;
+    filter: grayscale(1) brightness(0.85);
 }
 
 .cert-card:hover .cert-thumb {
     transform: scale(1.06);
+    filter: grayscale(0) brightness(1);
 }
 
 /* Overlay icon on hover */
