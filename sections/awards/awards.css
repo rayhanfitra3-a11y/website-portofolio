@@ -224,17 +224,17 @@
 }
 
 .award-gallery-img.slide-in-left {
-    animation: gallerySlideLeft 0.32s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation: gallerySlideLeft 0.2s ease both;
 }
 
 .award-gallery-img.slide-in-right {
-    animation: gallerySlideRight 0.32s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation: gallerySlideRight 0.2s ease both;
 }
 
 @keyframes gallerySlideLeft {
     from {
         opacity: 0;
-        transform: translateX(60px);
+        transform: translateX(30px);
     }
 
     to {
@@ -246,7 +246,7 @@
 @keyframes gallerySlideRight {
     from {
         opacity: 0;
-        transform: translateX(-60px);
+        transform: translateX(-30px);
     }
 
     to {

@@ -134,6 +134,14 @@ function resetAutoSlide() {
     startAutoSlide();
 }
 
+// ─── Preload Images ───────────────────────────────────────────────────────────
+function preloadPhotos(photos) {
+    photos.forEach(function (src) {
+        var img = new Image();
+        img.src = src;
+    });
+}
+
 // ─── Open Modal ───────────────────────────────────────────────────────────────
 function openAwardModal(awardKey) {
     const data = awardsData[awardKey];
@@ -154,6 +162,7 @@ function openAwardModal(awardKey) {
 
     galleryPhotos = data.photos || [];
     galleryIndex = 0;
+    preloadPhotos(galleryPhotos);
     renderGallery();
     startAutoSlide();
 
@@ -176,10 +185,10 @@ function renderGallery(direction) {
     galleryImg.style.display = 'block';
     galleryHolder.style.display = 'none';
 
-    // Directional slide animation
+    // Directional slide animation (faster + smaller translate)
     if (direction) {
         galleryImg.classList.remove('slide-in-left', 'slide-in-right');
-        void galleryImg.offsetWidth; // force reflow to restart animation
+        void galleryImg.offsetWidth;
         galleryImg.classList.add(direction === 'next' ? 'slide-in-left' : 'slide-in-right');
     }
 
