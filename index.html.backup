@@ -1,4 +1,4 @@
-﻿?﻿
+﻿ï»¿
 <!DOCTYPE html>
 <html lang="en">
 
@@ -22,7 +22,6 @@
     <link rel="stylesheet" href="sections/education/education.css">
     <link rel="stylesheet" href="sections/organization/organization.css">
     <link rel="stylesheet" href="sections/awards/awards.css">
-    <link rel="stylesheet" href="sections/certificates/certificates.css">
     <link rel="stylesheet" href="sections/contact/contact.css">
 </head>
 
@@ -62,7 +61,6 @@
                 <li><a href="#projects" class="nav-link">Projects</a></li>
                 <li><a href="#education" class="nav-link">Education</a></li>
                 <li><a href="#awards" class="nav-link">Awards</a></li>
-                <li><a href="#certificates" class="nav-link">Certificates</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
             <div class="hamburger" id="hamburger">
@@ -92,7 +90,7 @@
                     and reach out if you'd like to discuss anything.
                 </p>
                 <div class="intro-buttons">
-                    <a href="#projects" class="btn btn-primary">View Projects →</a>
+                    <a href="#projects" class="btn btn-primary">View Projects â</a>
                     <a href="#contact" class="btn btn-secondary">Contact Me</a>
                 </div>
                 <div class="social-links">
@@ -118,16 +116,16 @@
             </div>
             <div class="intro-photo-wrap">
                 <!-- Floating Emoji Decorations -->
-                <span class="float-emoji float-emoji-1">💻</span>
-                <span class="float-emoji float-emoji-2">⚡</span>
-                <span class="float-emoji float-emoji-3">🚀</span>
+                <span class="float-emoji float-emoji-1">ð»</span>
+                <span class="float-emoji float-emoji-2">â¡</span>
+                <span class="float-emoji float-emoji-3">ð</span>
 
                 <!-- Photo Card -->
                 <div class="photo-card">
                     <div class="photo-frame">
                         <img id="introProfilePhoto" class="intro-photo-img" src="" alt="Rayhan">
                         <div id="introPhotoPlaceholder" class="intro-photo-placeholder">
-                            <span class="placeholder-icon">👤</span>
+                            <span class="placeholder-icon">ð¤</span>
                             <span>Your photo</span>
                         </div>
                     </div>
@@ -300,7 +298,7 @@
                     <div class="v-timeline-content">
                         <div class="v-timeline-head">
                             <h3 class="v-timeline-title">IT Support Technician Intern</h3>
-                            <span class="v-timeline-badge">Jan 2025 — Jun 2025</span>
+                            <span class="v-timeline-badge">Jan 2025 â Jun 2025</span>
                         </div>
                         <p class="v-timeline-company">PLTU Tanjung Awar-Awar</p>
                         <ul class="v-timeline-points">
@@ -338,7 +336,7 @@
                 <div class="project-card" data-category="web">
                     <div class="project-image" data-project="portfolio">
                         <img class="project-img" src="" alt="Portfolio Website">
-                        <div class="project-placeholder">🌐</div>
+                        <div class="project-placeholder">ð</div>
                     </div>
                     <div class="project-info">
                         <h3>Portfolio Website</h3>
@@ -354,7 +352,7 @@
                 <div class="project-card" data-category="system">
                     <div class="project-image" data-project="school">
                         <img class="project-img" src="" alt="School Management System">
-                        <div class="project-placeholder">📱</div>
+                        <div class="project-placeholder">ð±</div>
                     </div>
                     <div class="project-info">
                         <h3>EcoFarmX</h3>
@@ -371,7 +369,7 @@
                 <div class="project-card" data-category="ai">
                     <div class="project-image" data-project="ai-classifier">
                         <img class="project-img" src="" alt="AI Image Classifier">
-                        <div class="project-placeholder">🤖</div>
+                        <div class="project-placeholder">ð¤</div>
                     </div>
                     <div class="project-info">
                         <h3>TechAgro</h3>
@@ -395,7 +393,7 @@
             <div class="modal-body">
                 <div class="modal-image">
                     <img id="modalProjectImg" class="modal-project-img" src="" alt="">
-                    <div id="modalProjectIcon" class="project-placeholder-large">🌐</div>
+                    <div id="modalProjectIcon" class="project-placeholder-large">ð</div>
                 </div>
                 <div class="modal-info">
                     <h2 id="modalProjectTitle">Project Title</h2>
@@ -436,7 +434,7 @@
                         <h4 class="edu-school">SMK Negeri 1 Tuban</h4>
                         <p class="edu-major">Computer and Network Engineering</p>
                         <div class="edu-meta">
-                            <span class="edu-badge">2023 — 2026</span>
+                            <span class="edu-badge">2023 â 2026</span>
                         </div>
                         <ul class="edu-points">
                             <li>Focused on network infrastructure, hardware repair, and OS installation</li>
@@ -453,7 +451,7 @@
                         <h4 class="edu-school">SMP Negeri 4 Tuban</h4>
                         <p class="edu-major">General Education</p>
                         <div class="edu-meta">
-                            <span class="edu-badge">2019 — 2023</span>
+                            <span class="edu-badge">2019 â 2023</span>
                         </div>
                         <ul class="edu-points">
                             <li>Graduated with excellent academic performance</li>
@@ -499,7 +497,7 @@
                                 <h4 class="exp-position">Web Development Bootcamp</h4>
                                 <p class="exp-company">Self-Learning & Online Courses</p>
                             </div>
-                            <span class="exp-badge">2023 — 2024</span>
+                            <span class="exp-badge">2023 â 2024</span>
                         </div>
                         <ul class="edu-points">
                             <li>Learned HTML, CSS, JavaScript, and React</li>
@@ -515,7 +513,7 @@
                                 <h4 class="exp-position">IoT & Smart Agriculture</h4>
                                 <p class="exp-company">Research & Development Project</p>
                             </div>
-                            <span class="exp-badge">2024 — 2025</span>
+                            <span class="exp-badge">2024 â 2025</span>
                         </div>
                         <ul class="edu-points">
                             <li>Developed the EcoFarmX &amp; TechAgro systems</li>
@@ -635,32 +633,6 @@
         </div>
     </div>
     <!-- ============================================================ -->
-    <!--                   CERTIFICATES SECTION                       -->
-    <!-- ============================================================ -->
-    <section id="certificates" class="section">
-        <div class="container">
-            <h2 class="section-title">Certificates</h2>
-            <div class="cert-grid" id="certGrid">
-                <!-- Cards injected by certificates.js -->
-            </div>
-        </div>
-    </section>
-
-    <!-- Certificates Lightbox -->
-    <div id="certLightbox" class="cert-lightbox" role="dialog" aria-modal="true" aria-label="Certificate viewer">
-        <button class="cert-lb-nav prev" id="certLbPrev" aria-label="Previous">&#8249;</button>
-        <div class="cert-lightbox-inner">
-            <button class="cert-lb-close" id="certLbClose" aria-label="Close">&times;</button>
-            <img class="cert-lightbox-img" id="certLbImg" src="" alt="">
-            <span class="cert-lb-counter" id="certLbCounter">1 / 8</span>
-            <div class="cert-lb-caption">
-                <h4 id="certLbTitle"></h4>
-                <p id="certLbIssuer"></p>
-            </div>
-        </div>
-        <button class="cert-lb-nav next" id="certLbNext" aria-label="Next">&#8250;</button>
-    </div>
-    <!-- ============================================================ -->
     <!--                     CONTACT SECTION                          -->
     <!-- ============================================================ -->
     <section id="contact" class="section">
@@ -741,7 +713,6 @@
     <script src="sections/hero/hero.js"></script>
     <script src="sections/projects/projects.js"></script>
     <script src="sections/awards/awards.js"></script>
-    <script src="sections/certificates/certificates.js"></script>
 
     <!-- EmailJS SDK -->
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
